@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;  
+}
+body{
+    width: 100vw;
+    background-color: rgb(96, 59, 131);
+    color: greenyellow;
+}
+main{
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+}
+#header {
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding: 0px;
+background-color: rgba(66, 36, 107, 0.5);
+}
+#nav-bar ul{
+display: flex;
+flex-direction: row;
+justify-content: right;
+margin-right: 25px;
+margin-bottom: 0;
+
+}
+#header-img{
+    width:100px;
+}
+#figure{
+    margin: 0;
+   justify-content: left;
+    align-items: center;
+}
+#figure img{
+   transform: rotateX(0deg);
+   transform: scale(1);
+   transition: 0.5s;
+}
+#figure img:hover{
+    -webkit-transform: rotate(15deg) scale(1.2); 
+    transform:  rotate(15deg) scale(1.2);
+
+}
+.nav{   
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: bisque;
+}
+.nav-link :hover{
+    color: coral;
+}
+#nav-bar ul li a{
+    color:rgb(225, 225, 225);
+    text-decoration: none;
+    position: relative;
+    padding: 0;
+    margin: 0px;
+}
+#nav-bar ul li a:hover{
+    color:coral;
+    text-shadow: 1px 1px rgb(196, 191, 191);
+    text-decoration: none;
+    position: relative;
+}
+#nav-bar ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+#nav-bar ul li a:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color:coral;
+    position: absolute;
+}
+.nav{    
+    margin-right: 20px;
+}
+/* --------------------------------------------features--------------------------------------- */
+#features{
+    margin: 50px 10%;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    min-height: 80vh;
+}
+.features{
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+.right, .left{
+    width:80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+#book{
+    width:80%;
+    padding: 10px;
+}
+.cont-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 700px){
+    .cont-column{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .right, .left{
+        width:100%;
+        padding: 010px;
+    }
+}
+/* -------------------------------------reviews-------------------------------------- */
+#reviews{
+    margin: 50px 10%;
+    background-color: white;
+    color: black;
+    min-height: 80vh;
+    padding: 20px;   
+}
+.reviews{
+    margin: 30px;
+
+    font-size: 50px;
+    font-weight: 800;
+}
+.quote{
+    font-size: 40px;
+}
+.q-media{
+    font-size: 20px;
+}
+.q-more{
+    text-decoration: none;
+    font-size: 25px;
+}
+/* ----------------------------------------------------get the book------------------------- */
+#get-the-book{
+    margin: 50px 10%;
+    background-color: white;
+    color: black;
+    min-height: 80vh;
+    padding: 20px;   
+}
